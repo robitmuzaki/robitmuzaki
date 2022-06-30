@@ -1,0 +1,81 @@
+$primary: #CA3C25;
+$secondary: #E6AA68;
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";
+
+#header {
+    .profilpic {
+        width: 300px;
+        margin: 0 auto;
+        border: 4px solid $primary;
+        border-radius: 150px;
+        overflow: hidden;
+        background-image: url("../images/profil2.jpg");
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border: 4px solid $secondary;
+        }
+        img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover img {
+            opacity: 0;
+        }
+    }
+    .hello {
+        .btn-upwork {
+            background-color: #14a800;
+            color: $white;
+            border: none;
+        }
+        .btn-github {
+            background-color: #24292f;
+            color: $white;
+            border: none;
+        }
+        .btn {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.work-sample {
+    .work-wrap {
+        position: relative;
+        border: 2px solid $primary;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 2rem;
+        &:hover {
+            border: 2px solid $secondary;
+        }
+        .button-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            }
+            .button-inner {
+                height: 100%;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
