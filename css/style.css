@@ -12019,17 +12019,18 @@ textarea.form-control-lg {
 }
 #header .hello .btn-upwork {
   background-color: #14a800;
-  color: #fff;
-  border: none;
 }
 #header .hello .btn-github {
   background-color: #24292f;
-  color: #fff;
-  border: none;
+}
+#header .hello .btn-whatsapp {
+  background-color: #25D366;
 }
 #header .hello .btn {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #fff;
+  border: none;
 }
 #header .hello .btn:hover {
   opacity: 0.7;
